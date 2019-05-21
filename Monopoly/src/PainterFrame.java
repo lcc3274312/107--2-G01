@@ -12,11 +12,11 @@ import javax.swing.JPanel;
 public class PainterFrame extends JFrame implements ActionListener{
 	private JButton start;
 	private JButton stop;
-	private JPanel p1;//°µ¤@¶}©lªº¶}©l¿ï³æ
-	private JPanel p2;//°µ¹CÀ¸­¶­±
+	private JPanel p1;//ï¿½ï¿½ï¿½@ï¿½}ï¿½lï¿½ï¿½ï¿½}ï¿½lï¿½ï¿½ï¿½
+	private JPanel p2;//ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	private JPanel shapeType;
 	
-	private CardLayout cards;//±q¿ï³æ¸õ¨ì¹CÀ¸­¶­±
+	private CardLayout cards;//ï¿½qï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 
 
 	public PainterFrame() {
@@ -38,7 +38,7 @@ public class PainterFrame extends JFrame implements ActionListener{
 		
 		shapeType.add(p1,"cards1");
 		
-		p2.setBackground(Color.BLACK);
+		p2.setBackground(Color.BLUE);
 		shapeType.add(p2,"cards2");
 		
 		add(shapeType,BorderLayout.CENTER);
@@ -47,7 +47,7 @@ public class PainterFrame extends JFrame implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO ¦Û°Ê²£¥Íªº¤èªk Stub
+		// TODO ï¿½Û°Ê²ï¿½ï¿½Íªï¿½ï¿½ï¿½k Stub
 		if(e.getSource()==start)
 		{
 			cards.show(shapeType, "cards2");;
