@@ -12,11 +12,11 @@ import javax.swing.JPanel;
 public class PainterFrame extends JFrame implements ActionListener{
 	private JButton start;
 	private JButton stop;
-	private JPanel p1;//嚙踝蕭嚙瑾嚙罷嚙締嚙踝蕭嚙罷嚙締嚙踝蕭嚙�
-	private JPanel p2;//嚙踝蕭嚙瘠嚙踝蕭嚙踝蕭嚙踝蕭
+	private JPanel p1;//首頁
+	private JPanel p2;//遊戲介面
 	private JPanel shapeType;
 	
-	private CardLayout cards;//嚙緬嚙踝蕭嚙踝蕭嚙踝蕭C嚙踝蕭嚙踝蕭嚙踝蕭
+	private CardLayout cards;//分隔兩個所用的指令
 
 
 	public PainterFrame() {
@@ -47,7 +47,7 @@ public class PainterFrame extends JFrame implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO 嚙諛動莎蕭嚙談迎蕭嚙踝蕭k Stub
+		// TODO 
 		if(e.getSource()==start)
 		{
 			cards.show(shapeType, "cards2");;
