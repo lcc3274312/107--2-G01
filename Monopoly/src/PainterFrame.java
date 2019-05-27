@@ -38,7 +38,7 @@ public class PainterFrame extends JFrame implements ActionListener{
 		
 		shapeType.add(p1,"cards1");
 		
-		p2.setBackground(Color.RED);
+		p2.setBackground(Color.BLACK);
 		shapeType.add(p2,"cards2");
 		
 		add(shapeType,BorderLayout.CENTER);
