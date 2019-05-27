@@ -12,17 +12,17 @@ import javax.swing.JPanel;
 public class PainterFrame extends JFrame implements ActionListener{
 	private JButton start;
 	private JButton stop;
-	private JPanel p1;//���@�}�l���}�l���
-	private JPanel p2;//���C������
+	private JPanel p1;//嚙踝蕭嚙瑾嚙罷嚙締嚙踝蕭嚙罷嚙締嚙踝蕭嚙�
+	private JPanel p2;//嚙踝蕭嚙瘠嚙踝蕭嚙踝蕭嚙踝蕭
 	private JPanel shapeType;
 	
-	private CardLayout cards;//�q������C������
+	private CardLayout cards;//嚙緬嚙踝蕭嚙踝蕭嚙踝蕭C嚙踝蕭嚙踝蕭嚙踝蕭
 
 
 	public PainterFrame() {
 		super();
 		
-		p1 = new JPanel();
+		p1 = new JPanel(new BorderLayout());
 		p2 = new JPanel();
 		shapeType = new JPanel();
 		
@@ -33,12 +33,12 @@ public class PainterFrame extends JFrame implements ActionListener{
 		
 		start = new JButton("start");
 		start.addActionListener(this);
-		p1.add(start);
+		p1.add(start,BorderLayout.SOUTH);
 		p1.setBackground(Color.GREEN);
 		
 		shapeType.add(p1,"cards1");
 		
-		p2.setBackground(Color.BLUE);
+		p2.setBackground(Color.BLACK);
 		shapeType.add(p2,"cards2");
 		
 		add(shapeType,BorderLayout.CENTER);
@@ -47,7 +47,7 @@ public class PainterFrame extends JFrame implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent e) {
-		// TODO �۰ʲ��ͪ���k Stub
+		// TODO 嚙諛動莎蕭嚙談迎蕭嚙踝蕭k Stub
 		if(e.getSource()==start)
 		{
 			cards.show(shapeType, "cards2");;
