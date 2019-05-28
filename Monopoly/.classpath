@@ -6,5 +6,6 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/賴宇洋/107-2-go1/107--2-G01/Monopoly/libs/jl-1.0.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

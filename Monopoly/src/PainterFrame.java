@@ -9,13 +9,15 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
+import bgm.Music;
+
 public class PainterFrame extends JFrame implements ActionListener{
 	private JButton start;
 	private JButton stop;
 	private JPanel p1;//首頁
 	private JPanel p2;//遊戲介面
 	private JPanel shapeType;
-	
+	private Music music;
 	private CardLayout cards;//分隔兩個所用的指令
 
 
@@ -25,6 +27,8 @@ public class PainterFrame extends JFrame implements ActionListener{
 		p1 = new JPanel(new BorderLayout());
 		p2 = new JPanel();
 		shapeType = new JPanel();
+		
+		music = new Music();
 		
 		cards = new CardLayout();
 		
@@ -50,7 +54,8 @@ public class PainterFrame extends JFrame implements ActionListener{
 		// TODO 
 		if(e.getSource()==start)
 		{
-			cards.show(shapeType, "cards2");;
+			cards.show(shapeType, "cards2");
+			
 		}
 	}
 }
