@@ -5,6 +5,8 @@ import java.awt.Color;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import javax.swing.Icon;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
@@ -19,6 +21,7 @@ public class PainterFrame extends JFrame implements ActionListener{
 	private JPanel shapeType;
 	private Music music;
 	private CardLayout cards;//分隔兩個所用的指令
+	private Icon startic;
 
 
 	public PainterFrame() {
@@ -36,6 +39,12 @@ public class PainterFrame extends JFrame implements ActionListener{
 		
 		
 		start = new JButton("start");
+		startic = new ImageIcon(getClass().getResource("start.png"));
+		start = new JButton();
+		start.setOpaque(false);
+		start.setContentAreaFilled(false);  
+		start.setBorder(null); 
+		start.setIcon(startic);
 		start.addActionListener(this);
 		p1.add(start,BorderLayout.SOUTH);
 		p1.setBackground(Color.GREEN);
