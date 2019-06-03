@@ -23,8 +23,8 @@ public class PainterFrame extends JFrame implements ActionListener {
 	private Music music;
 	private CardLayout cards;// 分隔兩個所用的指令
 	private Icon startic;
-	
 	private JLabel map;
+	
 	public PainterFrame() {
 		super();
 

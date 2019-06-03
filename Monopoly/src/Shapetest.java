@@ -8,7 +8,7 @@ public class Shapetest {
 		// TODO �۰ʲ��ͪ���k Stub
 		PainterFrame Jframe = new PainterFrame();
 		Jframe.setTitle("Momopoly");
-		Jframe.setSize(950,1000);
+		Jframe.setSize(720,800);
 		Jframe.setVisible(true);
 	}
 
