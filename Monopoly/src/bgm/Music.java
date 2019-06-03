@@ -25,15 +25,10 @@ public class Music {
 				System.out.println(userhome);
 				JFileChooser jfc = new JFileChooser(userhome + "/resources/audio");
 
-				int returnValue = jfc.showOpenDialog(null);
-				// int returnValue = jfc.showSaveDialog(null);
+			
 
-				if (returnValue == JFileChooser.APPROVE_OPTION) {
-					File selectedFile = jfc.getSelectedFile();
-					filename = selectedFile.getAbsolutePath();
-				}
-
-				mp3 = new MP3(filename);
+				
+				mp3 = new MP3(userhome + "/resources/audio/song.mp3");
 				mp3.setLoop(true);
 				mp3.play();
 

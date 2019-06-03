@@ -5,10 +5,10 @@ import javax.swing.JLabel;
 public class Shapetest {
 
 	public static void main(String[] args) {
-		// TODO 自動產生的方法 Stub
+		// TODO 嚙諛動莎蕭嚙談迎蕭嚙踝蕭k Stub
 		PainterFrame Jframe = new PainterFrame();
 		Jframe.setTitle("Momopoly");
-		Jframe.setSize(600,800);
+		Jframe.setSize(950,1000);
 		Jframe.setVisible(true);
 	}
 
