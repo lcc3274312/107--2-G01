@@ -44,7 +44,7 @@ public class PainterFrame extends JFrame implements ActionListener {
 		p1 = new JPanel(new BorderLayout());
 		p2 = new JPanel();
 		shapeType = new JPanel();
-		img = new ImageIcon(getClass().getResource("Map.jpg"));
+		img = new ImageIcon(getClass().getResource("map.png"));
 		img.setImage(img.getImage().getScaledInstance(width, higth, Image.SCALE_DEFAULT));
 
 		map = new JLabel();
